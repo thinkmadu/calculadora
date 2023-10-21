@@ -1,0 +1,54 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    align-items: center;
+    background: linear-gradient(180deg, #eb92be,#ffef78, #63c9b4); /*cores do fundo*/
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center; /* deixa os botões e tudo mais no meio da tela*/
+}
+
+.wrapper{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(225, 255, 255, 0.75); /* fundo da calculadora */
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1); /* sombra dos botões*/
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.3); /* deixou a calculadora com o aspecto de transparência */
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px; /* isso e o height é o que dão o tamanho da calculadora */
+    height: 540px;
+    padding: 20px 35px;
+}
+.screen{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75); /* cor do fundo da tela */
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
